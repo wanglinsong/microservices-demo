@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>igithub.wanglinsong.microservice</groupId>
-    <artifactId>microservice-pom</artifactId>
+    <artifactId>microservice-demo</artifactId>
     <version>1.0.0</version>  
     <packaging>pom</packaging>
 
-    <name>microservice-pom</name>
+    <name>microservice-demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,6 +24,6 @@
         <module>web</module>
         <module>accounts</module>
     </modules>
-    <description>microservice-pom</description>
+    <description>microservice-demo</description>
 </project>
 
