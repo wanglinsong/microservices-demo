@@ -16,7 +16,7 @@ RUN java -version
 VOLUME /tmp
 EXPOSE 8888
 
-ADD accounts-server-1.0.0.jar app.jar
+ADD target/accounts-server-1.0.0.jar app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS=""
 ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
