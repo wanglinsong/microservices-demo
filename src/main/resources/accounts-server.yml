@@ -8,7 +8,7 @@ spring:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/accounts-server/templates/    # Trailing / mandatory
                              # Template location for this application only
-
+ 
 # Map the error path to error template (for Thymeleaf)
 error:
   path: /error
@@ -23,7 +23,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://registration:8761/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
 
@@ -35,7 +35,3 @@ eureka:
 #     NOTE-2: Syntax ${x:${y}} = use $x if set, otherwise use $y
 #   metadataMap:
 #     instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-      
-
-
-
