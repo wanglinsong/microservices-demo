@@ -16,7 +16,7 @@ import io.pivotal.microservices.accounts.AccountsConfiguration;
  * <p>
  * Note that the configuration for this application is imported from
  * {@link AccountsConfiguration}. This is a deliberate separation of concerns.
- * 
+ *
  * @author Paul Chapman
  */
 @EnableAutoConfiguration
@@ -24,22 +24,22 @@ import io.pivotal.microservices.accounts.AccountsConfiguration;
 @Import(AccountsConfiguration.class)
 public class AccountsServer {
 
-	@Autowired
-	protected AccountRepository accountRepository;
+    @Autowired
+    protected AccountRepository accountRepository;
 
-	protected Logger logger = Logger.getLogger(AccountsServer.class.getName());
+    protected Logger logger = Logger.getLogger(AccountsServer.class.getName());
 
-	/**
-	 * Run the application using Spring Boot and an embedded servlet engine.
-	 * 
-	 * @param args
-	 *            Program arguments - ignored.
-	 */
-	public static void main(String[] args) {
-		// Tell server to look for accounts-server.properties or
-		// accounts-server.yml
-		System.setProperty("spring.config.name", "accounts-server");
+    /**
+     * Run the application using Spring Boot and an embedded servlet engine.
+     *
+     * @param args
+     *             Program arguments - ignored.
+     */
+    public static void main(String[] args) {
+        // Tell server to look for accounts-server.properties or
+        // accounts-server.yml
+        System.setProperty("spring.config.name", "accounts-server");
 
-		SpringApplication.run(AccountsServer.class, args);
-	}
+        SpringApplication.run(AccountsServer.class, args);
+    }
 }

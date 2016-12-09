@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>igithub.wanglinsong</groupId>
-    <artifactId>microservice</artifactId>
+    <groupId>igithub.wanglinsong.microservice</groupId>
+    <artifactId>microservice-pom</artifactId>
     <version>1.0.0</version>  
     <packaging>pom</packaging>
 
-    <name>miscroservice</name>
+    <name>microservice-pom</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,5 +24,6 @@
         <module>web</module>
         <module>accounts</module>
     </modules>
+    <description>microservice-pom</description>
 </project>
 
