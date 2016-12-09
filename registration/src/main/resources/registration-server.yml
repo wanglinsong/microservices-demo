@@ -1,7 +1,7 @@
 # Configure this Discovery Server
 eureka:
   instance:
-    hostname: eureka
+    hostname: registration-server
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
@@ -12,4 +12,4 @@ server:
 # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
 spring:
   thymeleaf:
-    enabled: false     # Disable Thymeleaf 
+    enabled: false     # Disable Thymeleaf

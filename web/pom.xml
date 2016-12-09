@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.samples.service.service</groupId>
-	<artifactId>microservice-demo</artifactId>
-	<version>1.1.0.RELEASE</version>
+	<groupId>github.wanglinsong.microservice</groupId>
+	<artifactId>web-server</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -87,4 +87,6 @@
 			</plugin>
 		</plugins>
 	</build>
+    <name>web-server</name>
+    <description>web-service</description>
 </project>

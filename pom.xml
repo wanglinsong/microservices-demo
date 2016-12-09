@@ -20,7 +20,7 @@
     </properties>
 
     <modules>
-        <module>eureka</module>
+        <module>registration</module>
         <module>web</module>
         <module>accounts</module>
     </modules>

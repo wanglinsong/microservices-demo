@@ -25,4 +25,4 @@ eureka:
 
 # HTTP Server
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 8888   # HTTP (Tomcat) port
