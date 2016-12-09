@@ -14,9 +14,9 @@ RUN export JAVA_HOME
 RUN java -version
 
 VOLUME /tmp
-EXPOSE 8761
+EXPOSE 8888
 
-ADD target/registration-server-1.0.0.jar app.jar
+ADD target/web-server-1.0.0.jar app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS=""
 ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]

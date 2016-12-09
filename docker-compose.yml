@@ -1,0 +1,14 @@
+registration:
+    build: ./registration
+    container_name: registration
+    hostname: registration
+    ports:
+       - "8761:8761"
+    net: microservices-demo
+accounts:
+    build: ./accounts
+    container_name: accounts
+    hostname: accounts
+    ports:
+       - "8888:8888"
+    net: microservices-demo
